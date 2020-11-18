@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/0ab82dc476.js" crossorigin="anonymous"></script>
+        <title>CourseWork</title>
+        <style>
+            header{
+                padding: 10px;
+                text-align: right;
+            }
+            body, html{
+                height: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            section{
+                display: flex;
+                background-color: lavender;
+                height: 700px;
+            }
+            footer{
+                background-color: lightcoral;
+            }
+            .noStyle{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                background-color: white;
+            }
+            .list{
+                text-align: center;
+                display: inline-block;
+                background-color: blue;
+                width: 80px;
+                height: 15px;
+                padding: 5px;
+                font-size: 11px;
+                font-weight: bold;
+                color: white;
+            }
+
+            .firstNavButton{
+                float: left;
+                margin-left: 10px;
+                background-color: rgb(31, 30, 58);
+            }
+            .secondNavButton{
+                background-color: white;
+                color: black;
+            }
+            .thirdNavButton{
+                margin-right: 10px;
+                background-color: rgb(91, 74, 206);
+                
+            }
+            .leftBlock{
+                width: 900px;
+                height: 700px;
+                background-color: rgb(31, 30, 58);
+            }
+            .signInBlock{
+                width: 433px;
+                height: 700px;
+                display: inline;
+            }
+            form{
+                margin: 180px 50px 0px 140px;
+            }
+            input, label{
+                display: block;
+            }
+            .labelLogin{
+                margin-top: -40px;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            .labelPassword{
+                font-size: 12px;
+                font-weight: bold;
+            }
+            input[type=text]{
+                width: 245px;
+                padding: 8px 10px;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+                border: none;
+            }
+            input[type=password]{
+                width: 245px;
+                padding: 8px 10px;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+                border: none;
+            }
+            .loginBtn{
+                background-color: rgb(50, 67, 141);
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                width: 245px;
+            }
+            .underSignIn{
+                width: 235px;
+                font-size: 10px;
+                line-height: 1.5;
+                
+            }
+            #aboveButtons{
+                font-size: 11px;
+                font-weight: 600;
+            }
+            h6{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            #button1, #button2, #button3, #button4{
+                background-color: white;
+                width: 45px;
+                height: 30px;
+                border: none;
+                cursor: pointer;
+                outline: none;
+                
+            }
+
+            button:hover{
+                opacity: 0.5;
+                background-color: grey;
+            }
+            .buttons{
+                display: inline-flex;
+                flex-wrap: wrap;
+                gap: 21px;
+                
+            }
+            .secondSection{
+                background-color: lavender;
+                height: 500px;
+                display: flex;
+            }
+            .divis1{
+                background-color: lavender;
+                width: 433px;
+            }
+            .divis2{
+                background-color: rgb(114, 230, 191);
+                width: 820px;
+                height: 400px;
+                margin-top: 52px;
+            }
+            .secondContent{
+                width: 220px;
+                height: 250px;
+                margin: 100px 50px 0px 165px;
+            }
+            .contentHeader{
+                font-size: 28px;
+                font-weight: 700;
+                display: inline;
+                line-height: 1.4;
+            }
+            .colorChange{
+                color: orange;
+            }
+            .pSecondContent{
+                font-size: 12px;
+                font-weight: 400;
+            }
+            .contentButton{
+                text-align: center;
+                font-size: 12px;
+                font-weight: 700;
+                background-color: orange;
+                color: black;
+                border: none;
+                cursor: pointer;
+                width: 110px;
+                height: 33px;
+                border-radius: 20px;
+            }
+            .thirdSectionHeadings{
+                width: 1333px;
+                height: 100px;
+                align-content: center;
+                background-color: lavender;
+            }
+            .thirdSection{
+                background-color: lavender;
+                display: block;
+            }
+            .thirdSectionHead{
+                text-align: center;
+                font-size: 29px;
+                font-weight: 700;
+                margin-top: -10px;
+            }
+            .row{
+                background-color: lavender;
+                height: 100px;
+                margin-bottom: 50px;
+            }
+            .rowOne{
+                margin-top: 50px;
+            }
+            .rowTwo{
+                background-color: lavender;
+            }
+            .rowThree{
+                background-color: lavender;
+            }
+            .number{
+                text-align: center;
+                display: inline-block;
+                margin-top: 25px;
+                background-color: white;
+                width: 50px;
+                height: 50px;
+                line-height: 1.7;
+                margin-left: 60px;
+                font-size: 30px;
+                font-weight: 700;
+                border-radius: 50%;
+            
+            }
+            .row{
+                display: flex;
+            }
+            .rowOne{
+
+            }
+            .rowTwo{
+
+            }
+            .rowThree{
+
+            }
+            .block{
+                margin-left: 60px;
+                width: 150px;
+            }
+            .b1{
+                background-color: orange;
+            }
+            .b2{
+                background-color: purple;
+            }
+            .b3{
+                background-color: rgb(31, 30, 58);
+            }
+            .text{
+                width: 800px;
+                margin-left: 50px;
+                display: inline-block;
+            }
+            .fourthSection{
+                background-color: rgb(8, 8, 65);
+                height: 600px;
+            }
+            .pLine{
+                font-size: 11px;
+            }
+            h5{
+                margin-top: 25px;
+                margin-bottom: 5px;
+                font-weight: 900;
+                font-size: 18px;
+            }
+            .fourthSectionHeader{
+                width:450px;
+                height:300px;
+                margin-left: 450px;
+            }
+            .fourthSectionParagraph{
+                font-size: 28px;
+                font-weight: 900;
+                color: white;
+                text-align: center;
+            }
+            .p1{
+                margin-top: 100px;
+            }
+            .fox1{
+                color: orange;
+            }
+            .fox2{
+                color: paleturquoise;
+            }
+            .fourthSectionList{
+                position: absolute;
+                margin-top: 330px;
+                width: 1333px;
+                height: 200px;
+                display: flex;
+            }
+            .listBlock{
+                height: 200px;
+                width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .head{
+                font-weight: 900;
+                margin-left: 125px;
+                color: white;
+            }
+            .orderLine{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+            .orderList{
+                float: left;
+                font-weight: 700;
+                font-size: 12px;
+                color: white;
+                margin-right: 25px;
+            }
+            .listSeperator{
+                width: 400px;
+                margin-top: 10px;
+                margin-bottom: 7px;
+                height: 2px;
+                background-color: beige;
+            }
+            .listParagraph{
+                text-align: justify;
+                font-size: 12px;
+                color: white;
+                line-height: 20px;
+            }
+            .orderList::before {
+                content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                color: rgb(37, 202, 45); /* Change the color */
+                font-weight: bold; /* If you want it to be bold */
+                font-size: 15px;
+                display: inline-block; /* Needed to add space between the bullet and the text */
+                width: 10px; /* Also needed for space (tweak if needed) */
+                margin-left: 0; /* Also needed for space (tweak if needed) */
+                margin-top: -5px;
+                margin-right: 5px;
+            }
+            .fifthSection{
+                background-color: rgb(76, 28, 167);
+                height: 350px;
+            }
+            .fifthContent{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+                height: 200px;
+                width: 500px;
+                text-align: center;
+            }
+            .fifthHeader{
+                font-size: 28px;
+                font-weight: 700;
+                color: white;
+            }
+            .fifthParagraph{
+                margin-top: 20px;
+                font-size: 12px;
+                color: white;
+            }
+            .wider{
+                width: 200px;
+            }
+            footer{
+                background-color: rgb(8, 8, 65);
+                height: 60px;
+                display: flex;
+            }
+            .footerBtn{
+                background-color: grey;
+                float: left;
+                height: 24px;
+                width: 100px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 20px;
+            }
+            .footerInfo{
+                margin: auto;
+                height: 24px;
+                width: 400px;
+                display: flex;
+
+            }
+            .footerIcon{
+                float: right;
+                height: 24px;
+                width: 70px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-right: 20px;
+            }
+            .footerParagraph{
+                font-size: 12px;
+                margin: auto;
+                color: white;
+            }
+            .footerIcon{
+                display: flex;
+                flex-direction: row;
+                color: white;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+            .fIconConf{
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="noStyle">
+                    <li class="firstNavButton list"></li>
+                    <li class="secondNavButton list">Lorem ipsum</li>
+                    <li class="thirdNavButton list">dolor sit amet</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="leftBlock">
+            </div>
+            <div class="signInBlock">
+                <form>
+                    <h6>Lorem Ipsum</h6>
+                    <div class="container">
+                        
+                        <label class="labelLogin" for="email">Lorem ipsum</label>
+                        <input type="text"  name="email" required>
+        
+                        <label class="labelPassword" for="psw">Lorem ipsum</label>
+                        <input type="password"  name="psw" required>
+        
+                        <button type="login" class="loginBtn">Login</button>
+                    </div>
+                    <div class="container">
+                        <p class="underSignIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat nibh nisl,
+                                               ac molestie nisi tincidunt ac. Praesent commodo</p>
+                        <p class="underSignIn" id="aboveButtons">Lorem ipsum dolor sit amet:</p>
+                        <div class="buttons">
+                            <button type="button" id="button1" class="socialMediaButton"><i id="icon" class="fab fa-linkedin fa-lg"></i></button>  
+                            <button type="button" id="button2" class="socialMediaButton"><i id="icon" class="fab fa-google fa-lg"></i></button>  
+                            <button type="button" id="button3" class="socialMediaButton"><i id="icon" class="fab fa-facebook-square fa-lg"></i></button>  
+                            <button type="button" id="button4" class="socialMediaButton"><i id="icon" class="fab fa-github fa-lg"></i></button>  
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="secondSection">
+            <div class="divis1">
+                <div class="secondContent">
+                    <h1 class="contentHeader">Lorem ipsum dolor </h1>
+                    <h1 class="contentHeader colorChange">sit amet</h1>
+                    <p class="pSecondContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <button class="contentButton">Lorem ipsum</button>
+                </div>
+            </div>
+            <div class="divis2">
+            </div>
+        </section>
+        <section class="thirdSection">
+            <div class="thirdSectionHeadings">
+                <h2 class="thirdSectionHead">Lorem ipsum dolor sit amet.</h2>
+                <h2 class="thirdSectionHead">Consectetur adipiscing elit, sed do eiusmod tempor.</h2>
+            </div>
+            <div class="mainRow">
+                <div class="row rowOne">
+                    <div class="number">1</div>
+                    <div class="block b1"></div>
+                    <div class="text">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <p class="pLine">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis ultrices leo, sit amet varius arcu. Morbi molestie, nunc.</p>
+                    </div>
+                </div>
+                <div class="row rowTwo">
+                    <div class="number">2</div>
+                    <div class="block b2"></div>
+                    <div class="text">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <p class="pLine">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis ultrices leo, sit amet varius arcu. Morbi molestie, nunc.</p>
+                    </div>
+                </div>
+                <div class="row rowThree">
+                    <div class="number">3</div>
+                    <div class="block b3"></div>
+                    <div class="text">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <p class="pLine">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis ultrices leo, sit amet varius arcu. Morbi molestie, nunc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fourthSection">
+            <div class="fourthSectionHeader">
+                <p class="fourthSectionParagraph p1">The quick brown <span class="fox1">fox</span> jumps over the lazy dog</p>
+                <p class="fourthSectionParagraph">The quick brown <span class="fox2">fox</span> jumps over the lazy dog</p>
+            </div>
+            <div class="fourthSectionList">
+                <div class="listBlock">
+                    <h7 class="head">Lorem ipsum dolor</h7>
+                    <div class="listSeperator"></div>
+                    <ul class="orderLine">
+                        <li class="orderList">LOREM</li>
+                        <li class="orderList">IPSUM</li>
+                    </ul><br>
+                    <p class="listParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis ultrices leo, sit amet varius arcu. Morbi molestie, nunc.</p>
+                </div>
+                <div class="listBlock">
+                    <h7 class="head">Lorem ipsum dolor</h7>
+                    <div class="listSeperator"></div>
+                    <ul class="orderLine">
+                        <li class="orderList">LOREM</li>
+                        <li class="orderList">IPSUM</li>
+                    </ul><br>
+                    <p class="listParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis ultrices leo, sit amet varius arcu. Morbi molestie, nunc.</p>
+                
+                </div>
+                <div class="listBlock">
+                    <h7 class="head">Lorem ipsum dolor</h7>
+                    <div class="listSeperator"></div>
+                    <ul class="orderLine">
+                        <li class="orderList">LOREM</li>
+                        <li class="orderList">IPSUM</li>
+                    </ul><br>
+                    <p class="listParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis ultrices leo, sit amet varius arcu. Morbi molestie, nunc.</p>
+                
+                </div>
+            </div>
+        </section>
+        <section class="fifthSection">
+            <div class="fifthContent">
+                <h7 class="fifthHeader">Lorem ipsum dolor sit amet consectetur adipiscing elit</h7>
+                <p class="fifthParagraph">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                <button class="contentButton wider">Lorem ipsum</button>
+            </div>
+        </section>
+        <footer>
+            <div class="footerBtn">
+            </div>
+            <div class="footerInfo">
+                <p class="footerParagraph">© Lorme Ipsum 2020</p>
+                <p class="footerParagraph">Lorem</p>
+                <p class="footerParagraph">Ipsum</p>
+                <p class="footerParagraph">Consctetur</p>
+            </div>
+            <div class="footerIcon">
+                <div class="fIconConf"><i class="fab fa-facebook-square fa-lg"></i></div>
+                <div class="fIconConf"><i class="fab fa-instagram fa-lg"></i></div>
+            </div>
+        </footer>
+    </body>
+</html>
